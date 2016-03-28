@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/bigred"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.vutuanchien.android_chap23_usingstyles.MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#f0f0f0"
+        android:padding="5dp"
+        android:text="@string/content"
+        android:textColor="#006633"
+        android:textStyle="italic"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/MyTextViewStyle"
+        android:text="@string/content" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/MyTextViewStyle.BoldRed"
+        android:text="@string/content" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/MyTextViewStyle.BoldRed.Big"
+        android:text="@string/content" />
+
+    <Button
+        style="@style/MyButton.Green"
+        android:text="GREEN BUTTON" />
+
+    <Button
+        style="@style/MyButton.Orange"
+        android:text="ORANGE BUTTON" />
+
+    <Button
+        style="@style/MyButton.Orange.Selector"
+        android:text="SELECT TO CHANGE" />
+
+    <Button
+        style="@style/MyButton.Orange.Gradient"
+        android:text="GRADIENT BUTTON" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:indeterminate="true" />
+
+    <ProgressBar
+        android:id="@+id/progress2"
+        style="?android:attr/spinnerMode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+</LinearLayout>
